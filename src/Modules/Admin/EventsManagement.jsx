@@ -274,22 +274,13 @@ const AdminEventsManagement = () => {
                         className="border-b hover:bg-gray-50 transition"
                       >
                         <td className="px-6 py-4">
-                          <div className="flex gap-3">
-                            {event.image && (
-                              <img
-                                src={event.image}
-                                alt={event.title}
-                                className="w-10 h-10 rounded object-cover"
-                              />
-                            )}
-                            <div>
-                              <p className="font-semibold text-gray-900">
-                                {event.title}
-                              </p>
-                              <p className="text-xs text-gray-500">
-                                {event.venue}
-                              </p>
-                            </div>
+                          <div>
+                            <p className="font-semibold text-gray-900">
+                              {event.title}
+                            </p>
+                            <p className="text-xs text-gray-500">
+                              {event.venue}
+                            </p>
                           </div>
                         </td>
                         <td className="px-6 py-4 text-sm text-gray-600 hidden md:table-cell">
