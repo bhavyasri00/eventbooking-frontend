@@ -203,7 +203,7 @@ export default function MyBookings() {
       )}
 
       {/* Custom Navbar - Only Home and My Bookings */}
-      <nav className="bg-opacity-80 backdrop-blur text-gray-900 shadow-lg fixed top-0 left-0 right-0 z-50">
+      <nav className="bg-white text-gray-900 fixed top-0 left-0 right-0 z-50">
         <div className="max-w-screen-xl mx-auto px-6">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
@@ -322,7 +322,7 @@ export default function MyBookings() {
       {/* Main Content */}
       <div className="min-h-screen pt-20">
         {/* Header */}
-        <header className="bg-opacity-80 backdrop-blur shadow">
+        <header className="bg-white">
           <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center">
               <div>
@@ -365,7 +365,7 @@ export default function MyBookings() {
               </p>
             </div>
           ) : bookings.length === 0 ? (
-            <div className="bg-opacity-80 backdrop-blur rounded-lg shadow p-8 text-center">
+            <div className="bg-white rounded-lg shadow p-8 text-center">
               <svg
                 className="mx-auto h-12 w-12 text-gray-400"
                 fill="none"
@@ -404,7 +404,7 @@ export default function MyBookings() {
                 return (
                   <div
                     key={bookingId}
-                    className="bg-opacity-80 backdrop-blur rounded-lg shadow overflow-hidden hover:shadow-lg transition"
+                    className="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition"
                   >
                     <div className="p-6">
                       <div className="flex justify-between items-start mb-4">

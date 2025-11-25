@@ -54,13 +54,13 @@ export default function Auth({ onClose }) {
     <>
       {/* Overlay - Click to close */}
       <div
-        className="fixed inset-0 bg-black bg-opacity-50 z-40"
+        className="fixed inset-0 bg-black bg-opacity-50 z-[60] top-0 left-0 right-0 bottom-0"
         onClick={handleClose}
       />
 
       {/* Modal */}
       <div
-        className="fixed inset-0 flex items-center justify-center z-50 p-4"
+        className="fixed inset-0 flex items-center justify-center z-[70] p-4 top-0 left-0 right-0 bottom-0"
         onClick={(e) => {
           // Only close if clicking on the backdrop, not the modal content
           if (e.target === e.currentTarget) {
@@ -68,7 +68,7 @@ export default function Auth({ onClose }) {
           }
         }}
       >
-        <div className="bg-white rounded-lg shadow-2xl w-full max-w-md max-h-[90vh] overflow-y-auto">
+        <div className="bg-white rounded-lg shadow-2xl w-full max-w-md max-h-[95vh] overflow-y-auto">
           {/* Close Button */}
           <div className="sticky top-0 bg-white border-b flex justify-between items-center p-6">
             <div className="flex items-center gap-3">

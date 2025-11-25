@@ -111,7 +111,7 @@ export default function Navbar() {
         </div>
       )}
 
-      <nav className="bg-white text-gray-900 font-semibold shadow-lg fixed top-0 left-0 right-0 z-50 backdrop-blur-0">
+      <nav className="bg-white text-gray-900 font-semibold shadow-lg fixed top-0 left-0 right-0 z-50">
         <div className="max-w-screen-xl mx-auto px-6">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
