@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Logo from "../../Components/Logo";
-import { checkInService } from "../../services/checkInService";
+import { checkInService } from "../../services/checkinService";
 import { authService } from "../../services/authService";
 
 const StaffScanner = () => {
