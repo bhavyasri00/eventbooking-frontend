@@ -3,12 +3,15 @@ import axios from "axios";
 // Determine API URL based on environment
 let API_URL;
 
+// In production, use Render backend URL
+// The VITE_API_URL env var should be set in Render dashboard
 if (import.meta.env.MODE === "production") {
-  // Production - use Render backend
-  API_URL = "https://eventbooking-backend-nmlq.onrender.com/api";
+  API_URL =
+    import.meta.env.VITE_API_URL ||
+    "https://eventbooking-backend-nmlq.onrender.com/api";
 } else {
   // Development - use localhost
-  API_URL = "http://localhost:5000/api";
+  API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 }
 
 console.log("API URL:", API_URL, "Mode:", import.meta.env.MODE);
