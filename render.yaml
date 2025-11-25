@@ -2,7 +2,7 @@ services:
   - type: web
     name: eventpro-frontend
     buildCommand: VITE_API_URL=https://eventbooking-backend-nmlq.onrender.com/api npm install && npm run build
-    startCommand: npm install && node server.js
+    startCommand: npm exec serve -s dist -l 3000
     envVars:
       - key: NODE_VERSION
         value: 22.16.0
